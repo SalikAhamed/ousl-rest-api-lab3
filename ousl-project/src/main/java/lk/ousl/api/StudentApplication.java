@@ -40,6 +40,7 @@ class Student {
     private Long id;
     private String name;
     private String course;
+    private String address;
 
     public Student() {}
     public Student(String name, String course) { this.name = name; this.course = course; }
@@ -48,6 +49,9 @@ class Student {
     public void setName(String name) { this.name = name; }
     public String getCourse() { return course; }
     public void setCourse(String course) { this.course = course; }
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+    
 }
 
 interface StudentRepository extends JpaRepository<Student, Long> {}
